@@ -36,11 +36,10 @@ public class TestDistribution {
     }
 
     @Test
-    public void testIl2CppDumper() throws IOException, BinaryException, FakerAndroidException {
+    public void testIl2CppDumper() throws Exception{
         File out = TestUtils.getFileOutSampleDir("testIl2CppDumper","niuzai");
         Il2cppBinary.dumpIl2cpp(in,out);
     }
-
 
     @Test
     public void testMergeJavaLib() throws IOException, BinaryException, FakerAndroidException {
